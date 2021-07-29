@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<style>
+th{
+    text-align: left;
+}
+.uinput {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border: none;
+        background: white;
+        border-bottom: 2px solid silver;
+        width: 50%;
+        height: 50%;
+        align-items: center;
+        border: 1px solid black;
+}
+</style>
+<body style=" background: linear-gradient(to left, rgb(189, 45, 145), indigo,  violet,indigo, violet,rgb(189, 45, 145));">
+<table style="width: 100%;"  class="uinput">
+<tr >
+<th >Name</th>
+<th>Contact</th>
+<th>E-mail</th>
+<th>College</th>
+</tr>
+{% for students in student %}
+<tr>
+<td>{{ students['Name']}}</td>
+<td>{{ students['Contact'] }}</td>
+<td>{{ students['E-mail'] }}</td>
+<td>{{ students['College'] }}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</head>
+</html>

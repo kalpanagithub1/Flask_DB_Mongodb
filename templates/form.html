@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Student Data
+    </title>
+<style>
+    .uinput{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        border: none;
+        background: none;
+        border-bottom: 2px solid silver;
+        width: 70%;
+        height: 50%;
+        align-items: center;
+    }
+    .ainput{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        background:none;
+        border: 2px solid silver;
+        width: 70%;
+        height: 50%;
+        align-items: center;
+        border-radius: 100mm;
+        font-weight: bold;
+    }
+    body {
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: white;
+    }
+    table{
+        border-spacing: 30px;
+    }
+
+    .multicolortext {
+      background-image: linear-gradient(to left, rgb(189, 45, 145), indigo,  violet,indigo, violet,rgb(189, 45, 145) );
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+  </style>
+</head>
+<body>
+    
+  <h1 style="text-align: center; font-size: 250%;" > <span class="multicolortext"> <br>Student Data</span> </h1> 
+</body>
+<form action="/result" method="POST">
+<table style="width: 100%;"  >
+    <tr>
+        <td>
+    <div  style="padding-left: 100px;">
+        <label for="">Name </label><br>
+        <input class="uinput" type="text" name="a1" required>
+        
+    </div><br>
+    </td>
+    <td>
+    <div >
+        <label for="">Contact </label><br>
+        <input class="uinput" type="number" name="a2" required>
+    </td>
+    </tr>  
+    <tc>
+<td>
+  
+    </div><br>
+    <div style="padding-left: 100px;">
+        <label for="">E-mail  </label><br>
+        <input class="uinput" type="text" name="a3" required>
+        
+    </div><br>
+</td>
+<td>
+    <div >
+        <label for="">College </label><br>
+        <input class="uinput" type="text" name="a4" required>
+        
+    </div><br>
+</td>
+    </tc>
+    <tr>
+        <td>
+            <form action='/result'><input class="ainput" type="submit" value="Submit"></form>
+        </td>
+        <td>
+            <form action='/read'><input class="ainput" type="submit" value="Fetch Info"></form>
+        </td>
+        <td>
+            <form action='/delete'><input class="ainput" type="submit" value="Delete All"></form>
+        </td>
+    </tr>
+    
+</table>
+
+        
+        
+</form>
